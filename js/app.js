@@ -34,6 +34,10 @@ function mostrarBuscador(){
    search.style.top="135px";
    sombra.style.display="block";
    inputSearch.focus();
+ 
+   if(inputSearch.value===""){
+    box_search.style.display="none"
+}
 
 }
 
@@ -43,5 +47,43 @@ function ocultarBuscador(){
     search.style.top="0px";
     sombra.style.display="none";
     inputSearch.value="";
+    box_search.style.display="none";
 }
 
+
+
+
+
+//----------------- buscador internerno---------------------------------
+//filtrado de busqueda
+document.getElementById("inputSearch").addEventListener("keyup", buscadorInterno);
+
+ function buscadorInterno(){
+
+    filtro= inputSearch.value.toUpperCase();
+    li = box_search.getElementsByTagName("li");
+
+    //recorriendo elementos a filtrar 
+    
+    for(i=0; i < li.length; i++){
+         a = li[i].getElementsByTagName("a")[0];
+         textValue=a.textContent || a.innerText;
+
+        if(textValue.toUpperCase().indexOf(filtro)>-1){
+
+            li[i].style.display="";
+            box_search.style.display="block";
+
+            if(inputSearch.value===""){
+                box_search.style.display="none"
+            }
+
+        }else{
+            li[i].style.display="none";
+        }     
+    }
+
+    
+
+}
+ 
