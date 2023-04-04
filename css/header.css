@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 :root{
     --color_primario:#1256f6;
     --color_secundario:#006fed;
@@ -20,6 +22,7 @@ header{
     background: #fff;
     z-index: 20;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+   
 }
 
 /* Header superior */
@@ -35,9 +38,13 @@ header{
 
 }
 h1{
-    width: 250px;
+    width: 95px;
     font-weight: 500;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family:'Oswald', sans-serif;
+   
+}
+h1:hover{
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.5);
 }
 .search img{
     width: 30px;
@@ -147,7 +154,7 @@ nav  ul li{
 
 nav > ul > li:first-child > a{
     
-    background-image: url(../img/busqueda.png);
+    background-image: url(../img/iconos/busqueda.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -161,7 +168,7 @@ nav > ul > li:first-child{
 }
 
 nav > ul > li:first-child:hover > a{
-    background-image: url(../img/busqueda.png);
+    background-image: url(../img/iconos/busqueda.png);
     background-size: 35px;
     background-repeat: no-repeat;
     background-position: center center;

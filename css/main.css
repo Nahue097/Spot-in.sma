@@ -1,9 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root{
+  --color_primario:#1256f6;
+  --color_secundario:#006fed;
+  --color_letras:#20a5f7;
+}
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+}
 body{
-    background-color: #fff;
+   
+    background-color: #f3f3f3;
     margin: 0px;
     padding: 0px;
+    top:400px
+    
+    
+}
+.ctn-mapa{
+   
+    display: flex;
+    padding-top: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    
+}
+
+/* CAROUSEL TARJETAS casas-------------------------- */
+.ctn-tarjetas-casas{
+  overflow: hidden;
+ 
+}
+
+
+.ctn_carousel-casas{
+  position: relative;
+ 
+}
+.carousel_siguiente-casas,
+.carousel_anterior-casas{
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  background: none;
+  opacity: 40%;
+}
+.carousel_siguiente-casas:hover{
+  opacity: 100%;
+}
+
+.carousel_anterior-casas:hover{
+  opacity: 100%;
+}
+
+.carousel_siguiente-casas{
+  right: 10px;
+  z-index: 4;
+}
+
+.carousel_anterior-casas{
+  left: -1px;
+  z-index: 4;
+}
+
+.carousel_indicadores-casas .glider-dot{
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: var(--color_primario);
+  opacity: .4;
+  
+}
+.carousel_indicadores-casas .glider-dot:hover{
+  opacity: .7;
+}
+.carousel_indicadores-casas .glider-dot.active{
+  opacity: 1;
+}
+
+/* --------------------- carousel departamentos------------------ */
+.ctn_carousel-dep{
+  overflow: hidden;
+  
+}
+.ctn_carousel-dep{
+  position: relative;
+ 
+}
+.carousel_siguiente-dep,
+.carousel_anterior-dep{
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  background: none;
+  opacity: 40%;
+}
+.carousel_siguiente-dep:hover{
+  opacity: 100%;
+}
+
+.carousel_anterior-dep:hover{
+  opacity: 100%;
+}
+
+.carousel_siguiente-dep{
+  right: 10px;
+  z-index: 4;
+}
+
+.carousel_anterior-dep{
+  left: -1px;
+  z-index: 4;
+}
+
+.carousel_indicadores-dep .glider-dot{
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: var(--color_primario);
+  opacity: .4;
+  
+}
+.carousel_indicadores-dep .glider-dot:hover{
+  opacity: .7;
+}
+.carousel_indicadores-dep .glider-dot.active{
+  opacity: 1;
 }
 
 
 
 
+/* ------- estilo de las tarjetas------------ */
+.tarjeta{
+  width: 250px;
+  
+  margin: 10px;
+  padding: 15px;
+  background: rgb(255,255,255,0.1);
+  border-left: 1.5px solid rgb(255,255,255,0.4);
+  border-top: 1.5px solid rgb(255,255,255,0.4);
+  box-shadow: 20px 20px 50px rgb(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 15px;
+  transition: all .3s;
+}
+.tarjeta:hover{
+  transform: translateY(-8px);
+}
+
+.tarjeta:hover .portada img{
+  transform:scale(1.1) ;
+
+}
+
+.portada{
+  width: 100%;
+  height: 160px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-size:cover;
+ 
+}
+
+
+.portada img{
+  width: 100%;
+  background-size: contain;
+  transition: all .3s;
+}
+.tarjeta h2{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: center;
+  color: #030303;
+  font-family:'Oswald', sans-serif;
+}
+.tarjeta p{
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+}
+.tarjeta hr{
+  margin-top: 20px;
+  border: none;
+  height: 0.1px;
+  color: #000;
+}
+
+.footer-tarjeta{
+  margin-top: 5px;
+  display: flex;
+  color: #343030;
+  justify-content: space-between;
+}
+
+.footer-tarjeta h3{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+
+
+ 
+
+
+
+
+@media screen and (max-width:720px){
+  .ctn-mapa{
+    margin-top: 140px;
+    padding: 5px;
+    
+  }
+  
+  
+
+
+}

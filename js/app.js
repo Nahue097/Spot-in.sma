@@ -1,3 +1,4 @@
+
 document.querySelector('.bars__menu').addEventListener('click', animateBars);
 var line1__bars = document.querySelector(".line1__bars-menu");
 var line2__bars = document.querySelector(".line2__bars-menu");
@@ -87,3 +88,94 @@ document.getElementById("inputSearch").addEventListener("keyup", buscadorInterno
 
 }
  
+
+
+//-------------------- CAROUSEL---------------------------------------
+window.addEventListener('load', function(){
+    new Glider(this.document.querySelector('.ctn-tarjetas-casas'),{
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.carousel_indicadores-casas',
+        arrows: {
+          prev: '.carousel_anterior-casas',
+          next: '.carousel_siguiente-casas'
+        },
+        responsive: [
+            {
+              // screens greater than >= 775px
+              breakpoint: 400,
+              settings: {
+                // Set to `auto` and provide item width to adjust to viewport
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            
+              }
+            },{
+              // screens greater than >= 1024px
+              breakpoint: 720,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+               
+              }
+            },{
+                // screens greater than >= 1024px
+                breakpoint: 1000,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 4,
+                 
+                }
+              }
+          ]
+    });
+
+
+    
+});
+
+
+window.addEventListener('load', function(){
+    new Glider(this.document.querySelector('.ctn-tarjetas-departamentos'),{
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.carousel_indicadores-dep',
+        arrows: {
+          prev: '.carousel_anterior-dep',
+          next: '.carousel_siguiente-dep'
+        },
+        responsive: [
+            {
+                // screens greater than >= 775px
+                breakpoint: 400,
+                settings: {
+                  // Set to `auto` and provide item width to adjust to viewport
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+              
+                }
+              },{
+                // screens greater than >= 1024px
+                breakpoint: 720,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                 
+                }
+              },{
+                  // screens greater than >= 1024px
+                  breakpoint: 1000,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                   
+                  }
+                }
+          ]
+    });
+
+
+    
+});
