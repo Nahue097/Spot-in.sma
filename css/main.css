@@ -3,8 +3,11 @@
 
 :root{
   --color_primario:#1256f6;
-  --color_secundario:#006fed;
+  --color_secundario:#056a51;
   --color_letras:#20a5f7;
+}
+html{
+  scroll-behavior: smooth;
 }
 *{
   margin:0;
@@ -17,7 +20,7 @@ body{
     background-color: #f3f3f3;
     margin: 0px;
     padding: 0px;
-    top:400px
+   
     
     
 }
@@ -31,12 +34,13 @@ body{
     
 }
 
-/* CAROUSEL TARJETAS casas-------------------------- */
-.ctn-tarjetas-casas{
-  overflow: hidden;
- 
-}
 
+
+
+
+
+
+/* CAROUSEL TARJETAS casas-------------------------- */
 
 .ctn_carousel-casas{
   position: relative;
@@ -91,7 +95,7 @@ body{
 /* --------------------- carousel departamentos------------------ */
 .ctn_carousel-dep{
   overflow: hidden;
-  
+ 
 }
 .ctn_carousel-dep{
   position: relative;
@@ -142,9 +146,136 @@ body{
 .carousel_indicadores-dep .glider-dot.active{
   opacity: 1;
 }
+.ctn-tarjetas-departamentos{
+  scroll-padding-top: 60ex;
+  display: block;
+}
+
+/* ---------------------- CAROUSEL CABAÑAS--------------------- */
+
+.ctn_carousel-cabañas{
+  overflow: hidden;
+  
+}
+.ctn_carousel-cabañas{
+  position: relative;
+ 
+}
+.carousel_siguiente-cabañas,
+.carousel_anterior-cabañas{
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  background: none;
+  opacity: 40%;
+}
+.carousel_siguiente-cabañas:hover{
+  opacity: 100%;
+}
+
+.carousel_anterior-cabañas:hover{
+  opacity: 100%;
+}
+
+.carousel_siguiente-cabañas{
+  right: 10px;
+  z-index: 4;
+}
+
+.carousel_anterior-cabañas{
+  left: -1px;
+  z-index: 4;
+}
+
+.carousel_indicadores-cabañas .glider-dot{
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: var(--color_primario);
+  opacity: .4;
+  
+}
+.carousel_indicadores-cabañas.glider-dot:hover{
+  opacity: .7;
+}
+.carousel_indicadores-cabañas .glider-dot.active{
+  opacity: 1;
+}
+/* ---------------------CAROUSEL HABITACIONES------------------------- */
+.ctn_carousel-habit{
+  position: relative;
+ 
+}
+.carousel_siguiente-habit,
+.carousel_anterior-habit{
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  background: none;
+  opacity: 40%;
+}
+.carousel_siguiente-habit:hover{
+  opacity: 100%;
+}
+
+.carousel_anterior-habit:hover{
+  opacity: 100%;
+}
+
+.carousel_siguiente-habit{
+  right: 10px;
+  z-index: 4;
+}
+
+.carousel_anterior-habit{
+  left: -1px;
+  z-index: 4;
+}
+
+.carousel_indicadores-habit .glider-dot{
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: var(--color_primario);
+  opacity: .4;
+  
+}
+.carousel_indicadores-habit .glider-dot:hover{
+  opacity: .7;
+}
+.carousel_indicadores-habit .glider-dot.active{
+  opacity: 1;
+}
 
 
-
+/* ---------------------- DIVISORES--------------------- */
+.divisor{
+  display: block;
+  height: 30px;
+  padding: 5px;
+  padding-top: 10px;
+  margin-top: 5px;
+  background: var(--color_primario);
+  box-shadow: 0px 0px  10px rgba(0, 0, 0, 0.5);
+  scroll-margin-top: 140px;
+}
+.divisor h3{
+  text-align: center;
+  color: #f3f3f3;
+  font-weight:400 ;
+  text-transform: uppercase;
+  
+}
 
 /* ------- estilo de las tarjetas------------ */
 .tarjeta{
@@ -152,10 +283,10 @@ body{
   
   margin: 10px;
   padding: 15px;
-  background: rgb(255,255,255,0.1);
-  border-left: 1.5px solid rgb(255,255,255,0.4);
-  border-top: 1.5px solid rgb(255,255,255,0.4);
-  box-shadow: 20px 20px 50px rgb(0,0,0,0.5);
+  background: rgba(255,255,255,0.1);
+  border-left: 1.5px solid rgb(255,255,255,0.5);
+  border-top: 1.5px solid rgb(255,255,255,0.5);
+  box-shadow: 20px 20px 30px rgb(0,0,0,0.5);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 15px;

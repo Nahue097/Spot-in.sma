@@ -7,6 +7,9 @@
     --color_secundario:#006fed;
     --color_letras:#20a5f7;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin:0;
@@ -118,7 +121,7 @@ h1:hover{
     padding: 0px 15px;
     position: fixed;
     z-index: 20;
-    box-shadow: 0px 0.5px 0px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0.8px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
 .menu{
@@ -266,7 +269,7 @@ nav ul li ul li a:hover{
     width: 100%;
     padding: 15px 0px ;
     background: #ffffff;
-    z-index: 9;
+    z-index: 15;
     box-shadow: 0px 0px  10px rgba(0, 0, 0, 0.3);
     transition: all .5s ;
 }
@@ -305,7 +308,7 @@ nav ul li ul li a:hover{
     transform: translateX(-50%);
     width: 1200px;
     background: #ffffff;
-    z-index: 7;
+    z-index: 15;
     overflow: hidden;
     box-shadow: 0px 0px  10px rgba(0, 0, 0, 0.7);
     
@@ -327,6 +330,7 @@ nav ul li ul li a:hover{
     left: 0px;
     background: rgba(0, 0, 0, 0.5);
    display: none;
+   z-index: 10;
   
 }
 

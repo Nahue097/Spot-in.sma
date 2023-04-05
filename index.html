@@ -43,7 +43,7 @@
                             <a href="#" ></a>
                         </li>
                         <li>
-                            <a href="#">Casas</a>
+                            <a href="#divisor__casas">Casas</a>
                             <ul>
                                 <li><a href="#">en la montaña</a></li>
                                 <li><a href="#">en el centro</a></li>
@@ -54,7 +54,7 @@
                             
                         </li>
                         <li>
-                            <a href="#">Departamentos</a>
+                            <a href="#divisor__dep">Departamentos</a>
                             <ul>
                                 <li><a href="#"> en la montaña</a></li>
                                 <li><a href="#">en el centro</a></li>
@@ -64,7 +64,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Cabañas</a>
+                            <a href="#divisor__cabañas">Cabañas</a>
                             <ul>
                                 <li><a href="#"> en la montaña</a></li>
                                 <li><a href="#"> en el centro</a></li>
@@ -74,7 +74,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Habitaciones</a>
+                            <a href="#divisor__habit">Habitaciones</a>
                             <ul>
                                 <li><a href="#"> en la montaña</a></li>
                                 <li><a href="#"> en el centro</a></li>
@@ -136,13 +136,16 @@
               width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 <!-- -------------------------------------CAROUSEL DE TARJETAS ---------------------------------------------- -->
-        
+                <div class="divisor" id="divisor__casas">
+                    <h3>Casas</h3>
+                </div>        
+
             <div class="ctn_carousel-casas">
                 <button aria-label="anterior" class="carousel_anterior-casas">
                     <img src="img/iconos/anterior.png" alt="">
                 </button>
                   
-                <section class="ctn-tarjetas-casas">
+                <section class="ctn-tarjetas-casas" >
 
                     <div class="tarjeta">
                         <div class="portada">
@@ -212,15 +215,17 @@
                 <div role="tablist" class="carousel_indicadores-casas"></div>
             </div>
 <!-- -----------------------DEPARTAMENTOS---------------------------- -->
-         
+            <div class="divisor" id="divisor__dep" >
+                <h3>Departamentos</h3>
+            </div>
 
 
-            <div class="ctn_carousel-dep">
+            <div class="ctn_carousel-dep" >
                 <button aria-label="anterior" class="carousel_anterior-dep">
                     <img src="img/iconos/anterior.png" alt="">
                 </button>
                   
-                <section class="ctn-tarjetas-departamentos">
+                <section class="ctn-tarjetas-departamentos" id="section__dep" >
 
                     <div class="tarjeta">
                         <div class="portada">
@@ -289,9 +294,169 @@
                 </button>
                 <div role="tablist" class="carousel_indicadores-dep"></div>
             </div>
-       
-       
 
+       <!--  ---------------- CAROUSEL CABAÑAS------------------------  -->   
+       <div class="divisor" id="divisor__cabañas">
+          <h3>cabañas</h3>
+       </div>
+       
+       
+       <div class="ctn_carousel-casas">
+        <button aria-label="anterior" class="carousel_anterior-casas">
+            <img src="img/iconos/anterior.png" alt="">
+        </button>
+          
+        <section class="ctn-tarjetas-cabañas" id="section__cabañas">
+
+            <div class="tarjeta">
+                <div class="portada">
+                    <img src="img/cabañas/cabañas1.jpg" alt="">
+                </div>
+                <h2>Bellisimas cabañas en la montaña</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi odit, recusandae maiores vero impedit est quam assumenda 
+                    consequatur sunt harum earum? Ipsam porro consequatur possimus ad distinctio ipsa molestiae!
+                </p>
+                <hr>
+                <div class="footer-tarjeta">
+                    <h3 class="user-name">alguien</h3>
+                    <i>3 abril 2023</i>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="portada">
+                    <img src="img/cabañas/cabañas2.jpg" alt="">
+                </div>
+                <h2>Bellisimas cabañas en la montaña</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi odit, recusandae maiores vero impedit est quam assumenda 
+                    consequatur sunt harum earum? Ipsam porro consequatur possimus ad distinctio ipsa molestiae!
+                </p>
+                <hr>
+                <div class="footer-tarjeta">
+                    <h3 class="user-name">alguien</h3>
+                    <i>3 abril 2023</i>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="portada">
+                    <img src="img/cabañas/cabañas3.jpg" alt="">
+                </div>
+                <h2>Bellisima casa en la montaña</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi odit, recusandae maiores vero impedit est quam assumenda 
+                    consequatur sunt harum earum? Ipsam porro consequatur possimus ad distinctio ipsa molestiae!
+                </p>
+                <hr>
+                <div class="footer-tarjeta">
+                    <h3 class="user-name">alguien</h3>
+                    <i>3 abril 2023</i>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="portada">
+                    <img src="img/cabañas/cabañas2.jpg" alt="">
+                </div>
+                <h2>Bellisima casa en la montaña</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi odit, recusandae maiores vero impedit est quam assumenda 
+                    consequatur sunt harum earum? Ipsam porro consequatur possimus ad distinctio ipsa molestiae!
+                </p>
+                <hr>
+                <div class="footer-tarjeta">
+                    <h3 class="user-name">alguien</h3>
+                    <i>3 abril 2023</i>
+                </div>
+            </div>
+
+        </section>
+        
+
+        <button aria-label="siguiente" class="carousel_siguiente-cabañas">
+            <img src="img/iconos/chevron-derecho.png" alt="">
+        </button>
+        <div role="tablist" class="carousel_indicadores-cabañas"></div>
+    </div>
+
+<!-- ------------------------------TARJETAS HABITACIONES---------------------- -->
+<div class="divisor" id="divisor__habit">
+    <h3>habitaciones</h3>
+ </div>
+ 
+ 
+ <div class="ctn_carousel-habit">
+  <button aria-label="anterior" class="carousel_anterior-habit">
+      <img src="img/iconos/anterior.png" alt="">
+  </button>
+    
+  <section class="ctn-tarjetas-habit" id="section__habit">
+
+      <div class="tarjeta">
+          <div class="portada">
+              <img src="img/habitaciones/habit1.webp" alt="">
+          </div>
+          <h2>Bellisimas cabañas en la montaña</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi odit, recusandae maiores vero impedit est quam assumenda 
+              consequatur sunt harum earum? Ipsam porro consequatur possimus ad distinctio ipsa molestiae!
+          </p>
+          <hr>
+          <div class="footer-tarjeta">
+              <h3 class="user-name">alguien</h3>
+              <i>3 abril 2023</i>
+          </div>
+      </div>
+
+      <div class="tarjeta">
+          <div class="portada">
+              <img src="img/habitaciones/habit2.jpg" alt="">
+          </div>
+          <h2>Bellisimas cabañas en la montaña</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi odit, recusandae maiores vero impedit est quam assumenda 
+              consequatur sunt harum earum? Ipsam porro consequatur possimus ad distinctio ipsa molestiae!
+          </p>
+          <hr>
+          <div class="footer-tarjeta">
+              <h3 class="user-name">alguien</h3>
+              <i>3 abril 2023</i>
+          </div>
+      </div>
+
+      <div class="tarjeta">
+          <div class="portada">
+              <img src="img/habitaciones/habit3.jpg" alt="">
+          </div>
+          <h2>Bellisima casa en la montaña</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi odit, recusandae maiores vero impedit est quam assumenda 
+              consequatur sunt harum earum? Ipsam porro consequatur possimus ad distinctio ipsa molestiae!
+          </p>
+          <hr>
+          <div class="footer-tarjeta">
+              <h3 class="user-name">alguien</h3>
+              <i>3 abril 2023</i>
+          </div>
+      </div>
+      <div class="tarjeta">
+          <div class="portada">
+              <img src="img/habitaciones/habit4.jpg" alt="">
+          </div>
+          <h2>Bellisima casa en la montaña</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi odit, recusandae maiores vero impedit est quam assumenda 
+              consequatur sunt harum earum? Ipsam porro consequatur possimus ad distinctio ipsa molestiae!
+          </p>
+          <hr>
+          <div class="footer-tarjeta">
+              <h3 class="user-name">alguien</h3>
+              <i>3 abril 2023</i>
+          </div>
+      </div>
+
+  </section>
+  
+
+  <button aria-label="siguiente" class="carousel_siguiente-habit">
+      <img src="img/iconos/chevron-derecho.png" alt="">
+  </button>
+  <div role="tablist" class="carousel_indicadores-habit"></div>
+</div>
+ 
        
     </main>
       

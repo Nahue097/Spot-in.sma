@@ -90,7 +90,7 @@ document.getElementById("inputSearch").addEventListener("keyup", buscadorInterno
  
 
 
-//-------------------- CAROUSEL---------------------------------------
+//-------------------- CAROUSEL CASAS---------------------------------------
 window.addEventListener('load', function(){
     new Glider(this.document.querySelector('.ctn-tarjetas-casas'),{
         slidesToShow: 1,
@@ -135,6 +135,7 @@ window.addEventListener('load', function(){
     
 });
 
+//------------------------------CAROUSEL DEPARTAMENTOS-----------------
 
 window.addEventListener('load', function(){
     new Glider(this.document.querySelector('.ctn-tarjetas-departamentos'),{
@@ -179,3 +180,96 @@ window.addEventListener('load', function(){
 
     
 });
+
+//--------------------------CAROUSEL CABAÑAS---------------------------
+
+window.addEventListener('load', function(){
+  new Glider(this.document.querySelector('.ctn-tarjetas-cabañas'),{
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: true,
+      dots: '.carousel_indicadores-cabañas',
+      arrows: {
+        prev: '.carousel_anterior-cabañas',
+        next: '.carousel_siguiente-cabañas'
+      },
+      responsive: [
+          {
+              // screens greater than >= 775px
+              breakpoint: 400,
+              settings: {
+                // Set to `auto` and provide item width to adjust to viewport
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            
+              }
+            },{
+              // screens greater than >= 1024px
+              breakpoint: 720,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+               
+              }
+            },{
+                // screens greater than >= 1024px
+                breakpoint: 1000,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 4,
+                 
+                }
+              }
+        ]
+  });
+
+
+  
+});
+
+//---------------------------- TARJETAS HABITACIONES----------------------
+
+window.addEventListener('load', function(){
+  new Glider(this.document.querySelector('.ctn-tarjetas-habit'),{
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: true,
+      dots: '.carousel_indicadores-habit',
+      arrows: {
+        prev: '.carousel_anterior-habit',
+        next: '.carousel_siguiente-habit'
+      },
+      responsive: [
+          {
+              // screens greater than >= 775px
+              breakpoint: 400,
+              settings: {
+                // Set to `auto` and provide item width to adjust to viewport
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            
+              }
+            },{
+              // screens greater than >= 1024px
+              breakpoint: 720,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+               
+              }
+            },{
+                // screens greater than >= 1024px
+                breakpoint: 1000,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 4,
+                 
+                }
+              }
+        ]
+  });
+
+
+  
+});
+
