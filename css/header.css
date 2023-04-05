@@ -100,14 +100,7 @@ h1:hover{
 }
 
 
-.texto__nav h3{
-    color: #cccabb;
-    font-weight:300 ;
-    display: flex;
-    margin: auto;
-   
-   
-}
+
 
 
 /* --------------------------------- */
@@ -353,6 +346,8 @@ nav ul li ul li a:hover{
     .bars__menu{
         width: 25PX;
         height: 25PX;
+        right: 10px;
+        display: block;
     }
     .activeline1__bars-menu{
         transform: rotate(45deg) translate(0px,-1px);
@@ -362,7 +357,7 @@ nav ul li ul li a:hover{
     }
      .activeline2__bars-menu{
         opacity: 0;
-        margin-left: 90px;
+        margin-left: -90px;
     }
 
    /*  ------------------------------------------------- */
@@ -371,28 +366,39 @@ nav ul li ul li a:hover{
     .container__menu{
         height: 70px;
         background: var(--color_primario);
+        padding: 0px;
     }
 
  
     .texto__nav {
         display: flex;
-        left: -800px;
+        
         font-size: 14px;
        
+    } 
+    .texto__nav h3{
+        color: #fff;
+        font-weight:300 ;
+        display: flex;
+        margin: auto;
+        font-weight: 400;
+        font-size: 14px;
+       
+       
     }
-     
-   .bars__menu{
+    
+    .nav_menu{
+      left: 100%;
+    }
 
-    display: block;
-    height: 100;
-    
-    
-    
-   }
-   .mostrar{
-    left: 0px;               /* muestra el menu */
-   }
- 
+    .mostrar_menu{
+        left: 0%;
+    }
+   
+     
+     
+  
+   
 
     .search input{
         display: none;

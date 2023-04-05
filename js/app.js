@@ -1,4 +1,5 @@
 
+//icono menu hamburguesa-------------
 document.querySelector('.bars__menu').addEventListener('click', animateBars);
 var line1__bars = document.querySelector(".line1__bars-menu");
 var line2__bars = document.querySelector(".line2__bars-menu");
@@ -11,11 +12,31 @@ function animateBars(){
    
 }
 
-document.getElementById("btn__menu").addEventListener("click", function(){
+//mostrar menu con evento click------------------------------
+const botonMenu = document.querySelector(".bars__menu");
+const navMenu = document.querySelector(".nav_menu");
 
-    document.getElementById("nav").classList.toggle("mostrar");
+  botonMenu.addEventListener("click", ()=>{
+    navMenu.classList.toggle("mostrar_menu");
+  })
+
+ 
+
+
+//ocultar menu responsive cuando selecciono algo del menu
+
+var ocultarConMenu = document.querySelectorAll('.nav_menu a[href^="#"]');
+
+ocultarConMenu.forEach(ocultarMenu => {
+  ocultarMenu.addEventListener("click", function(){
+    navMenu.classList.remove("mostrar_menu");
+    line1__bars.classList.toggle("activeline1__bars-menu");
+    line2__bars.classList.toggle("activeline2__bars-menu");
+    line3__bars.classList.toggle("activeline3__bars-menu");
    
+  })
 });
+
 
 //ejecutando funciones
 
