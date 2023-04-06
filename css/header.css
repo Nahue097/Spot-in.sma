@@ -117,16 +117,20 @@ h1:hover{
     box-shadow: 0px 0.8px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
-.menu{
+.menu__escritorio{
     max-width: 1200px;
     margin: auto;
     height: 100%;
    
 }
+.menu__responsive{
+    display: none;
+}
 
 .search input{
     border: solid 1px ;
 }
+
 
 nav{
     height: 100%;
@@ -245,6 +249,9 @@ nav ul li ul li a:hover{
    
     
 }
+/* --------------------------MENU RESPONSIVE-------------------- */
+
+
 
 /* BUSCADOR DE CONTENIDO */
 
@@ -335,6 +342,12 @@ nav ul li ul li a:hover{
 
 /* RESPOSIVE */
 @media screen and (max-width:720px) {
+    .menu__escritorio{
+        display: none;
+    }
+    .menu__responsive{
+        display: inline;
+    }
     .search img{
         width: 30px;
         margin-right: 10px;
@@ -362,14 +375,15 @@ nav ul li ul li a:hover{
 
    /*  ------------------------------------------------- */
 
-   /* MENU RESPONSIVE */
+  
     .container__menu{
         height: 70px;
         background: var(--color_primario);
         padding: 0px;
-    }
 
- 
+    }
+    
+  
     .texto__nav {
         display: flex;
         
@@ -386,16 +400,18 @@ nav ul li ul li a:hover{
        
        
     }
+   
+   
     
     .nav_menu{
       left: 100%;
     }
 
     .mostrar_menu{
-        left: 0%;
+        left: 0px;
     }
+    
    
-     
      
   
    

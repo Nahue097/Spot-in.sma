@@ -16,16 +16,17 @@ function animateBars(){
 const botonMenu = document.querySelector(".bars__menu");
 const navMenu = document.querySelector(".nav_menu");
 
+
+
   botonMenu.addEventListener("click", ()=>{
     navMenu.classList.toggle("mostrar_menu");
+   
   })
-
- 
 
 
 //ocultar menu responsive cuando selecciono algo del menu
 
-var ocultarConMenu = document.querySelectorAll('.nav_menu a[href^="#"]');
+/* var ocultarConMenu = document.querySelectorAll('.nav_menu a[href^="#d"]');
 
 ocultarConMenu.forEach(ocultarMenu => {
   ocultarMenu.addEventListener("click", function(){
@@ -35,7 +36,7 @@ ocultarConMenu.forEach(ocultarMenu => {
     line3__bars.classList.toggle("activeline3__bars-menu");
    
   })
-});
+}); */
 
 
 //ejecutando funciones
@@ -45,10 +46,10 @@ document.getElementById("sombra-ctn-search").addEventListener("click", ocultarBu
 
 //BUSCADOR DE CONTENIDO-----------------------------------------------
 
-var search=  document.getElementById("ctn-bars-search");
-var sombra=  document.getElementById("sombra-ctn-search");
-var inputSearch=  document.getElementById("inputSearch");
-var box_search=  document.getElementById("box-search");
+const search=  document.getElementById("ctn-bars-search");
+const sombra=  document.getElementById("sombra-ctn-search");
+const inputSearch=  document.getElementById("inputSearch");
+const box_search=  document.getElementById("box-search");
 
 //funcion mostrar buscador
 
@@ -125,7 +126,7 @@ window.addEventListener('load', function(){
         responsive: [
             {
               // screens greater than >= 775px
-              breakpoint: 400,
+              breakpoint: 430,
               settings: {
                 // Set to `auto` and provide item width to adjust to viewport
                 slidesToShow: 2,
@@ -171,7 +172,7 @@ window.addEventListener('load', function(){
         responsive: [
             {
                 // screens greater than >= 775px
-                breakpoint: 400,
+                breakpoint: 430,
                 settings: {
                   // Set to `auto` and provide item width to adjust to viewport
                   slidesToShow: 2,
@@ -217,7 +218,7 @@ window.addEventListener('load', function(){
       responsive: [
           {
               // screens greater than >= 775px
-              breakpoint: 400,
+              breakpoint: 430,
               settings: {
                 // Set to `auto` and provide item width to adjust to viewport
                 slidesToShow: 2,
@@ -263,7 +264,51 @@ window.addEventListener('load', function(){
       responsive: [
           {
               // screens greater than >= 775px
-              breakpoint: 400,
+              breakpoint:430,
+              settings: {
+                // Set to `auto` and provide item width to adjust to viewport
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            
+              }
+            },{
+              // screens greater than >= 1024px
+              breakpoint: 720,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+               
+              }
+            },{
+                // screens greater than >= 1024px
+                breakpoint: 1000,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 4,
+                 
+                }
+              }
+        ]
+  });
+
+
+  
+});
+ //----------------------------------------------CAROUSEL CAMPINGS----------------------------------------
+ window.addEventListener('load', function(){
+  new Glider(this.document.querySelector('.ctn-tarjetas-camping'),{
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: true,
+      dots: '.carousel_indicadores-camping',
+      arrows: {
+        prev: '.carousel_anterior-camping',
+        next: '.carousel_siguiente-camping'
+      },
+      responsive: [
+          {
+              // screens greater than >= 775px
+              breakpoint: 430,
               settings: {
                 // Set to `auto` and provide item width to adjust to viewport
                 slidesToShow: 2,
