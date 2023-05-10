@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+:root{
+    --color_primario:#1256f6;
+    --color_secundario:#056a51;
+    --color_letras:#20a5f7;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-family:'Oswald', sans-serif;
+    justify-content: center;
+    background: #f3f3f3;
+    height: 80px;
+    width: 100%;
+}
+h1{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--color_primario);
+}
+header a{
+    right: 0;
+}
+
+main{
+    background-color: #f8f8f8;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.ctn__form{
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    font-family:'Oswald', sans-serif ;
+}
+.header-form{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: var(--color_primario);
+    padding: 20px 40px;
+}
+
+.header-form h2{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form{
+    padding: 20px 30px;
+}
+
+.form-control{
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin: 5px;
+}
+
+.form-control input{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    width: 100%;
+
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color:#777 ;
+}
+
+.form-control.success input{
+    border-color: var(--color_letras);
+}
+
+.form-control.error input{
+    border-color: #e42f1b;
+}
+
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 52px;
+    right: 20px;
+}
+
+.form-control.success i.fa-check-circle{
+    color: var(--color_letras);
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #e42f1b;
+    visibility: visible;
+}
+
+.form-control small{
+    color: #e42f1b;
+    position: relative;
+    margin-top: 5px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form button{
+    background-color: var(--color_primario);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+

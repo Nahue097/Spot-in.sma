@@ -64,6 +64,7 @@ function mostrarBuscador(){
 
 }
 
+
 //ocultar buscador--------------
 
 function ocultarBuscador(){
