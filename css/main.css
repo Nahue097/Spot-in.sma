@@ -353,20 +353,27 @@ body{
 }
 
 .portada{
+  display: flex;
   width: 100%;
   height: 160px;
   border-radius: 15px;
   overflow: hidden;
   background-size:cover;
  
+} 
+.portada a{
+ 
+  max-width:304px;
 }
 
 
-.portada img{
+.portada a img{
   width: 100%;
   background-size: contain;
   transition: all .3s;
+  max-width: 100%;
 }
+
 .tarjeta h2{
   font-size: 20px;
   font-weight: 500;

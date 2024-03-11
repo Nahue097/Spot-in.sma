@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+:root{
+    --color_primario:#1256f6;
+    --color_secundario:#056a51;
+    --color_letras:#20a5f7;
+}
+.header{
+    align-items: center;
+    display:flex;
+    font-family:'Oswald', sans-serif;
+    justify-content: space-around;
+    background: #f3f3f3;
+    height: 80px;
+    width: 100%
+}
+.header h1{
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--color_primario);
+}
+.header a{
+  
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    background-color: var(--color_primario);
+    padding: 8px;
+    border-radius: 5px;
+    
+}
